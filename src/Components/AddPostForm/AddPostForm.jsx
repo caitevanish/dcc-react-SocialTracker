@@ -13,7 +13,7 @@ const AddPostForm = (props) => {
       userPost: userPost
     };
     console.log(newUserPost)
-    props.addNewPost(newUserPost)
+    props.addNewPost(newUserPost) 
   }
 
   return ( 

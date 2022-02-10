@@ -2,16 +2,21 @@ import "./SinglePost.css";
 import { useState } from 'react';
 
 
-export default function SinglePost({post}) {
 
-  const [likeButton, setLikeButton] = useState(post.like);
+export default function SinglePost(props) { //props!! Know it, use it, love it.
+  console.log(props.post)
+
+  const [likeButton, setLikeButton] = useState(props.post);
   const [isLiked, setIsLiked] = useState(false);
-  const [unlikeButton, setUnLikeButton] = useState(post.like);
+  const [unlikeButton, setUnLikeButton] = useState(props.post);
   const [isUnliked, setIsUnliked] = useState(false);
  
   function likeToggle(event){
     setLikeButton(isLiked)
     setIsLiked(!isLiked)
+
+
+
   }
 
   function unLikeToggle(event){
@@ -28,7 +33,7 @@ export default function SinglePost({post}) {
   // }, [props.parentEntries])
 
   return(
-    <div className="Post" style='border-box'>
+    <div className="Post">
       <div className="PostWrapper">
         <div className="PostTop">
           <div className="postTopLeft">

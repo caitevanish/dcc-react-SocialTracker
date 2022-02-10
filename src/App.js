@@ -5,6 +5,7 @@ import DisplayAllPosts from './Components/DisplayAllPosts/DisplayAllPosts';
 
 
 import './App.css';
+// import Example from './example';
 
 function App() {
 
@@ -18,13 +19,14 @@ function App() {
 
   return (
     <div className='container-fluid'>
+    
       <div className='row'>
        <NavBar /> 
        </div>
       <div className='row'>
         <div className='col-md-4'>
           <div className='border-box'>
-            <AddPostForm AddNewPost={addNewPost} />         
+            <AddPostForm addNewPost={addNewPost} />         
           </div>
         </div>
         <div className='col-md-8'>
