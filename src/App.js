@@ -21,10 +21,14 @@ function App() {
        <NavBar /> 
        </div>
       <div className='row'>
-        <h1>IdeationStation</h1>
         <div className='col-md-4'>
           <div className='border-box'>
             <AddPostForm AddNewPost={addNewPost} />         
+          </div>
+        </div>
+        <div className='col-md-8'>
+          <div className='border-box'>
+            <DisplayAllPosts AddNewPost={addNewPost} />         
           </div>
         </div>
         </div>

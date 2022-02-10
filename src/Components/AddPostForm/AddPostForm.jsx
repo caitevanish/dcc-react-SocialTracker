@@ -6,7 +6,7 @@ const AddPostForm = (props) => {
   const [userName, setUserName] = useState('');
   const [userPost, setUserPost] = useState('');
   
-  function handleSubmit(event){
+  function handleSubmit(event){ //should this be put on app.js level?
     event.preventDefault(); //prevent page from refreshing
     let newUserPost = {
       userName: userName,
