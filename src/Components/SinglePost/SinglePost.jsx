@@ -1,21 +1,31 @@
 import "./SinglePost.css";
+import { useState } from 'react';
 
-export default function Post() {
 
-  const [likeButton, setLikeButton] = useState('');
-  const [unlikeButton, setUnlikeButton] = useState('');
+export default function SinglePost({post}) {
+
+  const [likeButton, setLikeButton] = useState(post.like);
+  const [isLiked, setIsLiked] = useState(false);
+  const [unlikeButton, setUnLikeButton] = useState(post.like);
+  const [isUnliked, setIsUnliked] = useState(false);
  
-  function setLikeStatus(event){
-
+  function likeToggle(event){
+    setLikeButton(isLiked)
+    setIsLiked(!isLiked)
   }
 
-  useEffect(()=>{
-    let tempSocialFeed = props.parentEntries.map(entry =>{
-      return [entry.userName, entry.date, entry.post];
-    })
-    setLikeButton(tempSocialFeed);
-    setUnlikeButton(tempSocialFeed);
-  }, [props.parentEntries])
+  function unLikeToggle(event){
+    setUnLikeButton(isUnliked)
+    setIsUnliked(!isUnliked)
+  }
+
+  // useEffect(()=>{
+  //   let tempSocialFeed = props.parentEntries.map(entry =>{
+  //     return [entry.userName, entry.date, entry.post];
+  //   })
+  //   setLikeButton(tempSocialFeed);
+  //   setUnlikeButton(tempSocialFeed);
+  // }, [props.parentEntries])
 
   return(
     <div className="Post" style='border-box'>
@@ -30,8 +40,8 @@ export default function Post() {
         </div>
         <div className="PostBottom">
           <div className="PostBottomRight">
-            <img className="likeButton" src="" alt="" />
-            <img className="unLikeButton" src="" alt="" />
+            <img className="likeButton" src="" alt="" onClick={likeToggle}/>
+            <img className="unLikeButton" src="" alt="" onClick={unLikeToggle}/>
           </div>
         </div>
       </div>

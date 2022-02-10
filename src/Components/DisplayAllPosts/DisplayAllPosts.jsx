@@ -1,13 +1,12 @@
 import "./DisplayAllPosts.css"
+import SinglePost from "../SinglePost/SinglePost.jsx"
 
 
-const DisplayAllPosts = (props) => {
-  
-  
-}
+export default function DisplayAllPosts(){
+
   return(
-    <div className="AllPosts">
-      <div className="AllPostsWrapper">
+    <div className="allPosts">
+      <div className="allPostsWrapper">
         <SinglePost />
         <SinglePost />
         <SinglePost />
@@ -18,8 +17,9 @@ const DisplayAllPosts = (props) => {
     </div>
    )
   
+  }
 
-export default DisplayAllPosts;
+// export default DisplayAllPosts;
 
 
 //Add the liked buttons here

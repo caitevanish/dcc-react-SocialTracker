@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import AddPostForm from './Components/AddPostForm/AddPostForm';
 import NavBar from './Components/Navbar/Navbar';
+import DisplayAllPosts from './Components/DisplayAllPosts/DisplayAllPosts';
+
 
 import './App.css';
-
 
 function App() {
 
