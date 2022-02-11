@@ -1,13 +1,15 @@
 import React from 'react';
 import { Nav, Container} from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar'
+import Navbar from 'react-bootstrap/Navbar';
+import './Navbar.css';
+
 
 const NavBar = (props) => { 
 
 
   return (  
 
-    <Navbar bg="primary" variant="dark">
+    <Navbar variant="dark">
     <Container>
     <Navbar.Brand href="#home">IdeationStation</Navbar.Brand>
     <Nav className="me-auto">

@@ -1,43 +1,9 @@
-import React, { useState } from 'react';
-import AddPostForm from './Components/AddPostForm/AddPostForm';
-import NavBar from './Components/Navbar/Navbar';
-import DisplayAllPosts from './Components/DisplayAllPosts/DisplayAllPosts';
+import Home from './Pages/Home/Home.js'
+// import './App.css';
 
-
-import './App.css';
-// import Example from './example';
 
 function App() {
-
-  const [posts, setPosts] = useState([{userName: 'name', userPost:'Sample Here'}])
-
-  function addNewPost(post){
-    let tempPosts = [post, ...posts]
-    setPosts(tempPosts)
-  }
-
-
-  return (
-    <div className='container-fluid'>
-    
-      <div className='row'>
-       <NavBar /> 
-       </div>
-      <div className='row'>
-        <div className='col-md-4'>
-          <div className='addPostForm'>
-            <AddPostForm addNewPost={addNewPost} />         
-          </div>
-        </div>
-        <div className='col-md-6'>
-          <div className=''>
-            <DisplayAllPosts AddNewPost={addNewPost} />         
-          </div>
-        </div>
-        </div>
-
-      </div>
-  );
+  return <Home />
 }
 
 export default App;

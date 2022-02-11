@@ -2,7 +2,9 @@ import "./DisplayAllPosts.css"
 import SinglePost from "../SinglePost/SinglePost.jsx"
 import {Posts} from "../../DummyPosts.js"
 
-export default function DisplayAllPosts(){
+function DisplayAllPosts(){
+
+  
 
   return(
 
@@ -28,7 +30,7 @@ export default function DisplayAllPosts(){
   
   }
 
-// export default DisplayAllPosts;
+export default DisplayAllPosts;
 
 
 //Add the liked buttons here

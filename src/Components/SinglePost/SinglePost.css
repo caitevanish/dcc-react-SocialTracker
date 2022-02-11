@@ -1,77 +1,81 @@
-.post{
+.post {
   width: 100%;
   border-radius: 10px;
   margin: 30px, 0;
 }
 
-.postWrapper{
+.postWrapper {
   padding: 10px;
   border: 1px;
   border-style: solid;
   border-color: black;
   margin: 1em;
   padding: 1em;
+  background-color: #FFF5F8;
 }
 
-.postTop{
+.postTop {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-  margin: 1em;
-  padding: 1em;
+  justify-content: space-between;
+  margin-top: .5em;
+  /* margin: 1em; */
+  /* padding: 1em; */
 }
 
-.postTopLeft{
+.postTopLeft {
   display: flex;
-  align-items: center;
-  font-size: 18px;
-}
-
-.postTopRight{
-  display: flex;
+  margin-left: 1em;
   align-items: center;
   font-size: 18px;
 }
 
-.postUserName{
+.postTopRight {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 1em;
+}
+
+.postUserName {
   font-style: 15px;
   font-weight: 500;
   margin: 0, 10px;
 }
 
-.postMiddle{
+.postMiddle {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   border: 1px;
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
   margin: 1em;
   padding: 1em;
+  background-color: white;
 }
 
-.postDate{
+.postDate {
   font-style: 12px;
 }
 
-.postBottomRight{
-  align-content: right;
+.postBottomRight {
+  text-align: right;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+
 }
 
-.likeButton{
+.likeButton {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  
 }
 
-.unLikeButton{
+.unLikeButton {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 35px;
 }
 
 /* .border-box{
