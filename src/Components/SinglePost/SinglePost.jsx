@@ -36,7 +36,7 @@ export default function SinglePost(props) { //props!! Know it, use it, love it.
   }
 
   return(
-    <div className="Post">
+    <div className="post">
       
       <div className="postWrapper">
 

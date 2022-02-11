@@ -5,19 +5,24 @@ import {Posts} from "../../DummyPosts.js"
 export default function DisplayAllPosts(){
 
   return(
+
     <div className="allPosts">
-      <div className="allPostsWrapper">
-        {Posts.map((post)=>{
-          return <SinglePost key={post.id} post={post} />
-         
-        })}
-        {/* <SinglePost />
-        <SinglePost />
-        <SinglePost />
-        <SinglePost />
-        <SinglePost />
-        <SinglePost /> */}
-      </div>
+    <div className="header">
+        <h3>Think Tank!</h3>
+    </div>
+        <div className="allPostsWrapper">
+          {Posts.map((post)=>{
+            return <SinglePost key={post.id} post={post} />
+          
+          })}
+          {/* <SinglePost />
+          <SinglePost />
+          <SinglePost />
+          <SinglePost />
+          <SinglePost />
+          <SinglePost /> */}
+        </div>
+      
     </div>
    )
   

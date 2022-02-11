@@ -25,12 +25,12 @@ function App() {
        </div>
       <div className='row'>
         <div className='col-md-4'>
-          <div className='border-box'>
+          <div className='addPostForm'>
             <AddPostForm addNewPost={addNewPost} />         
           </div>
         </div>
-        <div className='col-md-8'>
-          <div className='border-box'>
+        <div className='col-md-6'>
+          <div className=''>
             <DisplayAllPosts AddNewPost={addNewPost} />         
           </div>
         </div>
