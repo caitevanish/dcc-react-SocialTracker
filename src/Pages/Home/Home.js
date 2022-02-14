@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AddPostForm from "../../Components/AddPostForm/AddPostForm.jsx";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import DisplayAllPosts from "../../Components/DisplayAllPosts/DisplayAllPosts.jsx";
-import './Home.css'
+import "./Home.css";
 
 // import './App.css';
 // import Example from './example';
@@ -28,7 +28,7 @@ export default function Home() {
             <AddPostForm addNewPost={addNewPost} />
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-7 ">
           <div className="">
             <DisplayAllPosts AddNewPost={addNewPost} />
           </div>
