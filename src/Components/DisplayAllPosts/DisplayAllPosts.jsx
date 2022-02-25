@@ -1,16 +1,16 @@
 import "./DisplayAllPosts.css";
 import SinglePost from "../SinglePost/SinglePost.jsx";
-// import { Posts } from "../../DummyPosts.js";
+import { Posts } from "../../DummyPosts.js";
 
-function DisplayAllPosts(props) {
+function DisplayAllPosts() {
   return (
     <div className="allPosts">
       <div className="header">
         <h3>Think Tank!</h3>
       </div>
       <div className="allPostsWrapper">
-        {props.posts.map((post, i) => {
-          return <SinglePost key={i} post={post} />;
+        {Posts.map((post) => {
+          return <SinglePost key={post.id} post={post} />;
         })}
       </div>
     </div>
@@ -18,5 +18,3 @@ function DisplayAllPosts(props) {
 }
 
 export default DisplayAllPosts;
-
-//Add the liked buttons here
