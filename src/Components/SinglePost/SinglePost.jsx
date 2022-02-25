@@ -68,3 +68,11 @@ export default function SinglePost(props) {
     </div>
   );
 }
+
+// useEffect(()=>{
+//   let tempSocialFeed = props.parentEntries.map(entry =>{
+//     return [entry.userName, entry.date, entry.post];
+//   })
+//   setLikeButton(tempSocialFeed);
+//   setUnlikeButton(tempSocialFeed);
+// }, [props.parentEntries])

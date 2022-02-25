@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import AddPostForm from "../../Components/AddPostForm/AddPostForm.jsx";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import DisplayAllPosts from "../../Components/DisplayAllPosts/DisplayAllPosts.jsx";
+import { Posts } from "../../DummyPosts.js";
 import "./Home.css";
 
 export default function Home() {
-  const [posts, setPosts] = useState([
-    { userName: "name", userPost: "Sample Here" },
-  ]);
+  const [posts, setPosts] = useState(Posts);
 
   function addNewPost(post) {
     let tempPosts = [post, ...posts];
@@ -27,7 +26,7 @@ export default function Home() {
         </div>
         <div className="col-md-7 ">
           <div className="">
-            <DisplayAllPosts AddNewPost={addNewPost} />
+            <DisplayAllPosts posts={posts} />
           </div>
         </div>
       </div>

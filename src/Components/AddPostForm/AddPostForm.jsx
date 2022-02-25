@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AddPostForm.css";
+//testing testing
 
 const AddPostForm = (props) => {
   const [userName, setUserName] = useState("");
@@ -8,11 +9,17 @@ const AddPostForm = (props) => {
   function handleSubmit(event) {
     event.preventDefault(); //prevent page from refreshing
     let newUserPost = {
-      userName: userName,
-      userPost: userPost,
+      username: userName,
+      post: userPost,
     };
     console.log(newUserPost);
     props.addNewPost(newUserPost);
+    resetForm();
+  }
+
+  function resetForm() {
+    setUserName("");
+    setUserPost("");
   }
 
   return (
